@@ -1,0 +1,132 @@
+/* Global resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Header & Profile Name */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #e74c3c;
+}
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Nav Bar */
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: #34495e;
+  transition: all 0.2s;
+}
+.nav-bar a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Home Icon */
+.home-icon img {
+  width: 24px;
+  vertical-align: middle;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  border-top: 1px solid #eee;
+}
+
+/* About Me */
+.about-me {
+  text-align: center;
+}
+.about-img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+.skill img {
+  width: 48px;
+}
+.skill span {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+/* Projects */
+.project {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+/* Recommendations */
+.recommendation {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2ecc71;
+  color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.hidden {
+  display: none;
+}
+
+/* Form */
+#recForm {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+#recInput {
+  flex: 1;
+  padding: 8px;
+}
+#recForm button {
+  padding: 8px 16px;
+}
