@@ -1,1 +1,123 @@
 # my-portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Surya’s Portfolio</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <header>
+    <!-- Task 1: Profile Name in top-left -->
+    <div class="profile-name"><B>JOHNY</B></div>
+
+    <!-- Task 2 & 8: Navigation Bar + Home Icon -->
+    <nav class="nav-bar">
+      <table><ul><td>
+        <li><a href="#about">About</a></li></td> <td>
+        <li><a href="#projects">Project details</a></li></td> <td>
+        <li><a href="#skills">Skills</a></li></td> <td>
+        <li><a href="#recommendations">Recommendations</a></li></td> <td>
+        <li class="home-icon">
+          <a href="#">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.R-XGSJ-tOdo00T6NFQGingHaGs?w=830&h=751&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Home" />
+          </a></td>
+        </li>
+      </ul></table>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Task 3: About Me -->
+    <section id="about" class="about-me">
+      <h2>About Me</h2>
+      <img src="https://img.freepik.com/premium-vector/cartoon-it-professional-vector-illustration_1080480-50029.jpg" alt="Johny’s Photo" class="about-img" />
+      <h3>JOHNY</h3>
+      <p>
+        I’m a passionate learner from India with methodical
+        approach to studies, keen on governance, civics, and
+        full-stack web development.
+      </p>
+    </section>
+
+    <!-- Task 4: Skills -->
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <!-- Two original skills -->
+        <div class="skill">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"  alt="HTML5" />
+          <span>HTML5</span>
+        </div>
+        <div class="skill">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.ma745w_3EkFlQZrhMTp9XAHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3" alt="CSS3" height="50" width="150"/>
+          <span>CSS3</span>
+        </div>
+        <!-- Three new skills -->
+        <div class="skill">
+          <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Emblem.png" alt="JavaScript" height="50" width="500"/>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill">
+          <img src="https://logos-world.net/wp-content/uploads/2023/08/React-Logo.png" alt="React" height="50"s width="500"/>
+          <span>React</span>
+        </div>
+        <div class="skill">
+          <img src="https://calvingomes.github.io/img/node.png" alt="Node.js" />
+          <span>Node.js</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task 5: Projects -->
+    <section id="projects" class="projects">
+      <h2>Project details</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>Designed and built a responsive portfolio using HTML/CSS/JS.</p>
+      </div>
+      <div class="project">
+        <h3>CDS PYQ Analyzer</h3>
+        <p>
+          Developed a tool to parse and visualize the last 10 years of
+          CDS Mathematics PYQs.
+        </p>
+      </div>
+      <div class="project">
+        <h3>GovTrack App</h3>
+        <p>
+          Created a React app to fetch and display parliamentary
+          proceedings data.
+        </p>
+      </div>
+    </section>
+
+    <!-- Task 6 & 7 & 9: Recommendations -->
+    <section id="recommendations" class="recommendations">
+      <h2>Recommendations</h2>
+      <div id="recList">
+        <div class="recommendation">“Surya is diligent and focused.”</div>
+        <div class="recommendation">“Excellent communicator.”</div>
+        <div class="recommendation">“Quick learner with great energy.”</div>
+      </div>
+
+      <!-- Task 7 & 9: Add Recommendation Form + Popup -->
+      <form id="recForm">
+        <input
+          type="text"
+          id="recInput"
+          placeholder="Add a recommendation..."
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+      <div id="popup" class="popup hidden">
+        Thank you for submitting a recommendation!
+      </div>
+    </section>
+  </main>
+
+  <script src="script3.js"></script>
+</body>
+</html>
